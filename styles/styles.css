@@ -3,6 +3,12 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+.main-container {
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+}
+/* Barra de Navegación */
 .nav-title {
     color: white;
     padding: 1%;
@@ -42,11 +48,10 @@ li {
 .active {
     font-weight: bold;
 }
-
 /* Contenido de la página */
-
+/* Perfil */
 .container {
-    margin: 5% 16%;
+    margin: 5% 5%;
     background-color: #fff;
     border-top: none !important;
     border: 2px solid #666;
@@ -56,10 +61,8 @@ li {
 .banner {
     background-color: #17a2b8;
     width: 100%;
-    left: -0.2%;
     height: 150px;
     position: relative;
-    border-radius: 5px;
 }
 
 #profile {
@@ -74,7 +77,7 @@ li {
 }
 
 .user-info {
-    height: 250px;
+    max-height: 250px;
     padding: 3%;
     margin-top: 30px;
 }
@@ -106,7 +109,6 @@ li {
 
 .configuration {
     text-align: left;
-    margin-top: 20px;
 }
 
 .configuration-link {
@@ -119,20 +121,83 @@ li {
     height: 16px;
     margin-right: 5px;
 }
+
+.titlecontent {
+    display: flex;
+    align-items: center;
+    background-color: #333333;
+    color: white;
+    font-weight: bold;
+    max-height: 100px;
+}
+.titlemain {
+    display: flex;
+}
+
+.content {
+    padding: 3%;
+}
+/* Conexiones */
 h2 {
+    font-size: 1.3em;
     padding: 10%;
 }
 
-.main-container {
-    display: flex;
-    flex: 2;
+.subcontainer {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin: 7% 5%;
 }
-
+.subtitlecontent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    object-fit: contain;
+    background-color: #333333;
+    color: white;
+    font-weight: bold;
+    padding: 0 2%;
+}
 .column-main {
     width: 60%;
-    margin-right: 5%;
+    margin-left: 13%;
 }
 
 .column-connections {
     width: 40%;
+    margin-right: 13%;
+}
+.number> p {
+    background-color: #cccccc;
+    color: #333333;
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+.user-profile {
+    max-width: 40px;
+}
+.user-name {
+    display: flex;
+    justify-content: start;
+    margin-left: 10px;
+}
+.view-more {
+    padding: 20px;
+    border-top: 1px solid #666 ;
+}
+.more {
+    text-decoration: underline;
+    color: #0077B5;
+}
+.other-user {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+}
+.options {
+    margin-left: auto;
 }
