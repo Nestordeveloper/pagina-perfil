@@ -137,6 +137,14 @@ li {
 .content {
     padding: 3%;
 }
+
+.education {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.date {
+    color: #666;
+}
 /* Conexiones */
 h2 {
     font-size: 1.3em;
